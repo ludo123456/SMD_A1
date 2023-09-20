@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title: "Find exactly what you need!" -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find exactly what you need!"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        />
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Search..."
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/search_bar_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Text: "Recent Searches" -->
+    <TextView
+        android:id="@+id/recentSearchesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Searches"
+        android:textSize="18sp"
+        android:layout_below="@+id/searchBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Recent Searches Buttons -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recentSearchItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item number one"
+        android:layout_below="@+id/recentSearchesText"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recentSearchItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item number two"
+        android:layout_below="@+id/recentSearchItem1"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recentSearchItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item number three"
+        android:layout_below="@+id/recentSearchItem2"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Text: "Popular Searches" -->
+    <TextView
+        android:id="@+id/popularSearchesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Searches"
+        android:textSize="18sp"
+        android:layout_below="@+id/recentSearchItem3"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Popular Searches Buttons -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popularSearchItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item number one"
+        android:layout_below="@+id/popularSearchesText"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popularSearchItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item number two"
+        android:layout_below="@+id/popularSearchItem1"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popularSearchItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item number three"
+        android:layout_below="@+id/popularSearchItem2"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popularSearchItem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item number four"
+        android:layout_below="@+id/popularSearchItem3"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/homepage_bottom_navbar"
+        android:id="@+id/navbar"
+
+        />
+
+
+
+
+
+</RelativeLayout>
+
